@@ -44,9 +44,9 @@ int search_or_insert(int a[], int l, int r, int x)
     if (a[m] == x)
         return m;
     else if (a[m] > x)
-        search_or_insert(a, l, m - 1, x);
+        return search_or_insert(a, l, m - 1, x);
     else
-        search_or_insert(a, m + 1, r, x);
+        return search_or_insert(a, m + 1, r, x);
 }
 
 int main()
@@ -58,7 +58,7 @@ int main()
         cin >> x;
 
     // cout << binary_search(a, 0, n - 1, x);
-    cout << search_or_insert(a, 0, n-1, x);
+    cout << search_or_insert(a, 0, n - 1, x);
 
     return 0;
 }
