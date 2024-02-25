@@ -109,18 +109,18 @@ int main() {
 	hang s[n];
 	hang s1[n] = {0};
 	int dem=0;
-//	if(thamlam(h,n,c,s)) {
-//		
-//		for(int i=0; i<n; i++) {
-//			if(s[i].giatri > 0) {
-//				dem ++;
-//			} 
-//		}
-//		cout << "Co " << dem;
-//	} else cout << "Khong";
-	quyhoachdong(h,n,10,s1);
-	for(int i=0; i<n; i++) {
-		cout << s1[i].khoiluong <<  " ";
-	}
+	if(thamlam(h,n,c,s)) {
+		
+		for(int i=0; i<n; i++) {
+			if(s[i].giatri > 0) {
+				dem ++;
+			} 
+		}
+		cout << "Co " << dem;
+	} else cout << "Khong";
+//	quyhoachdong(h,n,10,s1);
+//	for(int i=0; i<n; i++) {
+//		cout << s1[i].khoiluong <<  " ";
+//	}
 	return 0;
 }
