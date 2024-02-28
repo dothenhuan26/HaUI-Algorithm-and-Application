@@ -38,14 +38,14 @@ bool Z_alg(string p, string t, int *z) {
 	for(int i=1; i<n; i++) {
 		if(i>right) {
 			left=right=i;
-			while(right<n && s[right-left==s[right]]) right++;
+			while(right<n && s[right-left]==s[right]) right++;
 			z[i]=right-left;
 			right--;
 		} else if(z[i-left]<right-i+1) {
 			z[i]=z[right-left];
 		} else {
 			left=i;
-			while(right<n && s[right-left==s[right]]) right++;
+			while(right<n && s[right-left]==s[right]) right++;
 			z[i]=right-left;
 			right--;
 		}
